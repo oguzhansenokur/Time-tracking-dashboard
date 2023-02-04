@@ -58,7 +58,11 @@ body{
   max-width: 250px;
   background-color: var(--dark-blue);
   border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s all ease;
 }
+
+
 .cards-col {
   display: flex;
   gap: 29px;
@@ -79,6 +83,16 @@ body{
   z-index: 100;
   margin-top: 46px;
   border-radius: 15px 15px 0 0;
+  transition: 0.3s all ease;
+
+}
+
+.card:hover{
+  background-color: var(--cesaturated-blue);
+}
+
+.card:hover .card-content{
+  background-color: var(--cesaturated-blue);
 }
 .content-container {
   padding: 22px 25px;
@@ -97,9 +111,11 @@ body{
 .card-menu {
   border: none;
   background-color: inherit;
-  color: var(--pale-blue);
+  color: var(white);
   width: 15px;
 }
+
+
 .card-main {
   font-size: 50px;
   color: white;
@@ -185,6 +201,13 @@ body{
 .nav-text{
     color: var(--cesaturated-blue);
     text-decoration: none;
+    width: max-content;
+
+}
+
+.nav-text:hover{
+  color: white;
+  text-decoration: none;
 }
 .active{
     color: white;
