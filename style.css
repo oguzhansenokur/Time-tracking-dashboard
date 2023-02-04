@@ -102,14 +102,13 @@ body{
 }
 .card-main {
   font-size: 50px;
-  margin-top: 30px;
   color: white;
   font-weight: 300;
 }
 .card-footer {
   font-size: 14px;
-  color: var(--pale-blue);
   margin-top: 15px;
+  color: var(--pale-blue);
 }
 
 .work {
@@ -243,14 +242,80 @@ body{
     animation: top-bottom 1s;
     animation-timing-function: ease;
 }
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
 
 @media screen and (max-width:768px) {
   .container{
     flex-direction: column;
+    min-width: 323px;
   }
   .cards-col{
     flex-direction: column;
   }
+  .card{
+    min-width: 323px;
+    max-width: 323px;
+  }
+  .card-content{
+    width: 323px;
+  }
+  .card-main{
+    font-size: 32px;
+  }
+  .card-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+.card-footer{
+  margin-top: unset;
+}
+.border-wrapper{
+  width: 323px;
+  margin-top: unset;
+}
+.nav-card-col{
+  min-width: 323px;
+
+}
+.tab-menu{
+  height: unset;
+  padding-top: 40px;
+}
+.tab-content{
+  flex-direction: row;
+}
+.profile-overlay{
+  height: unset;
+}
+.text-wrapper{
+  margin-top: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding:23px;
+  padding-bottom: 10px;
+
+}
+.profile-img{
+  min-width: 71px;
+  width: 71px;
+}
+.full-name{
+  font-size: 24px;
+}
+
 }
 
 
